@@ -1,0 +1,25 @@
+<center><h1>Step3</h1>
+<hr><hr>
+
+<%= form_for @user, url: wizard_path do |f|%>
+  <div class="row">
+    <div class="col-lg-6 m-auto">
+      <div class="form-floating mb-3">
+        <%= f.text_field :address, autofocus: true, class: "form-control", autocomplete: "Address" %>
+          <label for="floatingInput">
+            <%= f.label :Address %>
+          </label>
+      </div>
+      <div class="form-floating mb-3">
+        <%= f.text_field :aadhar_no, autofocus: true, class: "form-control", autocomplete: "Aadhar_no" %>
+          <label for="floatingInput">
+            <%= f.label :Aadhar_no %>
+          </label>
+      </div>
+      <div class="actions my-3">
+        <%= f.submit "SAVE" ,class: "btn btn-info"%>
+      </div>
+    </div>
+  </div>
+  <%end%>
+  </center>
